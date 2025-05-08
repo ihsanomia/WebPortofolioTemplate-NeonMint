@@ -51,7 +51,6 @@
 
 ::selection {
 	@apply text-white bg-mint-500;
-	
   }
 *::-webkit-scrollbar-thumb{
 	border-radius: 20px;

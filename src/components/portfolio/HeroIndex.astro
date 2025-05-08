@@ -6,23 +6,25 @@ import { Icon } from "astro-icon/components";
 import Hobbies from "../portfolio/Hobbies.astro";
 
 const  {
-  profileImage = "/images/efeeleprofile.webp",
-  profileAlt = "Photo of Ihsanomia for the blog",
+  profileImage = "/images/anjay.webp",
+  profileAlt = "Foto Ihsanomia untuk blog",
   profileLink = "/about-me",
-  profileTitle = "FrontEnd Developer",
+  profileTitle = "Content Creator, Writer, Developer",
   profileName = "Ihsanomia",
-  githubLink = "https://github.com/EFEELE/NeonMint",
-  githubText = "Do you like this blog's design?",
+  githubLink = "https://github.com/ihsanomia/portofolio",
+  githubText = "Apa kamu suka dengan design website ini?",
   portfolioImage = "/images/portfolio.webp",
   email = "ihsanomiacanworks@gmail.com",
+  whatsapp = "+6285793533766" // Ganti dengan nomor WhatsApp Anda
 } = Astro.props;;
 ---
 
 <section
   class="scroll-m-16 px-8 max-sm:px-4 py-8"
   id="home"
-  aria-label="Professional profile and introduction"
+  aria-label="Profil profesional Ihsanomia"
 >
+<!-- Bagian Profil Utama -->
   <div
     class="mx-auto mb-4 h-96 w-full max-w-7xl rounded-2xl bg-gradient-to-r from-mint-300 dark:from-mint-600 to-mint-50 dark:to-mint-200/5 hover:to-mint-300/30 dark:hover:to-mint-600/30 p-[.2rem]  max-md:h-auto"
   >
@@ -38,15 +40,16 @@ const  {
           >
           </div>
           <div class="relative z-20 flex w-full rounded-full bg-mint-900">
+            
             <div
               class="w-full aspect-square rounded-full bg-center bg-cover"
               style={`background-image: url(${profileImage})`}
-              aria-label="Photo of Fernando Aldair López Ponce (EFEELE) for the blog"
+              aria-label="Foto Ihsanomia untuk blog"
             >
               <a
                 href={profileLink}
                 class="flex h-full w-full"
-                aria-label="View about me page"></a>
+                aria-label="Lihat halaman tentang saya"></a>
             </div>
           </div>
         </div>
@@ -75,21 +78,21 @@ const  {
           <span
             class="bg-gradient-to-r from-riptide-500 to-mint-500 bg-clip-text font-black text-transparent   dark:from-riptide-300 dark:to-mint-200"
             >{profileTitle}</span
-          > with <span
+          > dengan <span
             class="bg-gradient-to-r from-riptide-500 to-mint-500 bg-clip-text font-black text-transparent  dark:from-riptide-300 dark:to-mint-200"
-            >8 years of experience</span
-          >, passionate about development, technology, and coffee that sparks ideas. I love bringing digital projects to life. 🚀☕
+            >8 tahun pengalaman</span
+          >, tertarik tentang pengembangan web dan inovasi digital. Spesialis dalam membangun solusi teknologi untuk bisnis Indonesia. 🚀
         </p>
 
         <div class="flex gap-4 max-sm:flex-col max-sm:items-center">
           <Button
             link={"mailto:" + email}
-            text="Contact Me"
+            text="Kontak Saya sekarang"
             iconName="envelope"
           />
           <Button
             link={profileLink}
-            text="About Me"
+            text="Lihat tentang saya"
             iconName="person"
             variant="dark"
           />
@@ -154,7 +157,7 @@ const  {
             name="dashboard"
             aria-hidden="true"
           />
-          <Heading text="Tech" textGradient="Stack" level={3} />
+          <Heading text="Penguasaan" textGradient="Teknologi" level={3} />
         </div>
         <div class="overflow-y-auto">
           <Tools />
@@ -183,17 +186,17 @@ const  {
         <p
           class="z-2 my-6 text-lg font-semibold leading-6 dark:text-gray-200 text-blacktext max-xl:text-base max-w-[90%] max-md:max-w-[85%]"
         >
-          I love <span
+          Berbagai <span
             class="bg-gradient-to-r from-riptide-500 to-mint-500 bg-clip-text font-black text-transparent  dark:from-riptide-300 dark:to-mint-200"
-            >turning ideas into real projects.</span
+            >Projects Unggulan</span
           >
-          <br /> Here I show you some of the <span
+          <br /> yang telah menjadi  <span
             class="bg-gradient-to-r from-riptide-500 to-mint-500 bg-clip-text font-black text-transparent  dark:from-riptide-300 dark:to-mint-200"
-            >developments</span
-          > I've worked on, applying technology, design, and lots of creativity.
+            >solusi digital</span
+          > yang telah saya kerjakan dengan pendekatan profesional dan inovatif.
           <span
             class="bg-gradient-to-r from-riptide-500 to-mint-500  font-black  bg-clip-text text-transparent  dark:from-riptide-300 dark:to-mint-200"
-            >Check them out!</span
+            >Check di sini!</span
           >
         </p>
         <img

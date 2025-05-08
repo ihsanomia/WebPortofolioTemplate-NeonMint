@@ -5,7 +5,7 @@ import HeroIndex from "../components/portfolio/HeroIndex.astro";
 import Contact from "../components/portfolio/Contact.astro";
 import ListProjects from "../components/portfolio/ListProjects.astro";
 import { Icon } from "astro-icon/components";
-const pageTitle = "ihsanomia - Portfolio";
+const pageTitle = "ihsanomia - Developer Profesional Indonesia";
 const description = "Selamat datang di portfolio saya! Saya adalah seorang Frontend Developer dengan pengalaman 8 tahun. Saya sangat menyukai pengembangan web dan teknologi. Di sini Anda dapat menemukan informasi tentang pengalaman kerja saya, proyek yang telah saya kerjakan, dan cara menghubungi saya.";
 const ogimage = {
   url: "/images/imagedefault.webp",
@@ -17,6 +17,7 @@ import Heading from "../components/ui/Heading.astro";
 <Layout pageTitle={pageTitle} description={description} ogimage={ogimage}>
   <HeroIndex />
 
+  <!-- Bagian Pengalaman Kerja -->
   <section
     class="py-8 px-8 max-md:py-4 mb-4 scroll-m-16"
     id="experience"
@@ -24,7 +25,7 @@ import Heading from "../components/ui/Heading.astro";
     <div class="flex flex-col  pt-8 max-w-4xl mx-auto">
       <div class="flex gap-4 items-center justify-center">
         <Icon class="text-3xl dark:text-white text-blacktext" name="briefcase" />
-        <Heading text="Experience" textGradient="Work" level={2}/>
+        <Heading text="Jejak" textGradient="Kerja" level={2}/>
       </div>
 
       <Experience />
@@ -39,19 +40,19 @@ import Heading from "../components/ui/Heading.astro";
       <ListProjects>
         <div class="flex gap-4 items-center justify-center text-center">
           <Icon class="text-3xl dark:text-white text-blacktext" name="code" />
-          <Heading text="Projects" textGradient="Completed" level={2}/>
+          <Heading text="Karya" textGradient="Digital" level={2}/>
         </div>
         <p
           class="z-2 text-center mx-auto text-lg max-xl:text-base max-w-2xl dark:text-gray-200 text-blacktext my-6 leading-6 font-medium"
         >
-          I love <b
+          Saya telah mengembangkan berbagai solusi digital dengan <b
             class=" bg-gradient-to-r  from-riptide-500 to-mint-500 dark:from-riptide-300 dark:to-mint-200 text-transparent bg-clip-text"
-            >turning ideas into real projects.</b
-          >
-          <br /> Here I show you some of the <b
+            >teknologi terkini </b  
+          >untuk klien di berbagai sektor bisnis. 
+          <br /> Berikut beberapa project  <b
             class="d bg-gradient-to-r  from-riptide-500 to-mint-500 dark:from-riptide-300 dark:to-mint-200 text-transparent bg-clip-text"
-            >developments</b
-          > I've worked on, applying technology, design, and lots of creativity.
+            >unggulan</b
+          > yang telah saya selesaikan dengan pendekatan profesional.
           <b
             class=" bg-gradient-to-r  from-riptide-500 to-mint-500 dark:from-riptide-300 dark:to-mint-200 text-transparent bg-clip-text"
             >Check them out!</b

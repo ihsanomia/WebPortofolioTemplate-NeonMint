@@ -2,10 +2,11 @@
 import Heading from "../ui/Heading.astro";
 import Button from "../ui/Button.astro";
 
-const mail = "hello@efeele.dev";
-const title = "Ready to take your idea to the next level?";
-const subtitle = "Let's work together.";
-const buttonText = "Contact Me";
+const mail = "ihsanomiacanworks@gmail.com";
+const whatsapp = "+6285793533766"; // Ganti dengan nomor WhatsApp Anda
+const title = "Siap wujudkan ide Anda";
+const subtitle = "Mari berkolaborasi!";
+const buttonText = "Hubungi saya";
 const buttonIcon = "paperplane";
 ---
 
@@ -21,18 +22,36 @@ const buttonIcon = "paperplane";
             textGradient={subtitle}
             level={2}
           />
+          <p class="mt-4 text-gray-600 dark:text-gray-300">
+            Hubungi saya via email atau WhatsApp untuk konsultasi gratis
+          </p>
         </div>
+
         <div
           class="transition-all duration-500 group-hover:animate-jump group-hover:animate-duration-[300ms] group-hover:animate-ease-in-out group-hover:scale-105 hover:scale-125"
         >   
           <Button
-            variant="big"
-            link={`mailto:${mail}`}
-            text={buttonText}
-            iconName={buttonIcon}
-          />
+              variant="big"
+              link={`mailto:${mail}`}
+              text="Email"
+              iconName="envelope"
+            />
         </div>
+        <div
+        class="transition-all duration-500 group-hover:animate-jump group-hover:animate-duration-[300ms] group-hover:animate-ease-in-out group-hover:scale-105 hover:scale-110"
+      >
+        <Button
+          variant="big"
+          link={`https://wa.me/${whatsapp}`}
+          text="WhatsApp"
+          iconName="whatsapp"
+          class="bg-green-500 hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700"
+        />
+      </div>
+
       </div>
     </div>
   </div>
+
+  
 </section>

@@ -4,11 +4,11 @@ import Header from "../components/layout/Header.astro";
 import Footer from "../components/layout/Footer.astro";
 import  SpeedInsights  from "@vercel/speed-insights/astro"
 const {
-  pageTitle = "Ihsanomia - ",
-  description = "website pribadi ihsanomia",
+  pageTitle = "Ihsanomia - Website Pribadi",
+  description = "website portfolio pribadi Ihsanomia. Spesialis pembuatan website profesional dan aplikasi web berbasis di Indonesia. Menyediakan layanan pengembangan web berkualitas tinggi untuk bisnis dan individu.",
   ogimage = {
     url: "/images/imagedefault.webp",
-    alt: "Default image of EFEELE",
+    alt: "Portofolio Ihsanomia - Website Pribadi",
   },
 } = Astro.props;
 
@@ -16,17 +16,24 @@ const siteUrl = new URL(Astro.url).origin;
 const SEO = {
   sitename: "ihsanomia",
   url: siteUrl,
-  locale: "id",
+  locale: "id_ID",
   author: "Ihsanomia",
   twitter: "@Ihsanomia",
+  Geolocation : "Indonesia",
+  geo: {
+    region: "ID-JK",
+    country: "Indonesia",
+    city: "Jakarta",
+  }
 };
+
 
 
 const twitterimage = `${siteUrl}${ogimage.url}`;
 ---
 
 <html
-  lang="en"
+  lang="id"
   class="dark:bg-[#0E0E11] bg-mint-50/5 font-montserrat scroll-smooth"
 >
   <head>
@@ -43,10 +50,12 @@ const twitterimage = `${siteUrl}${ogimage.url}`;
     <!-- Web manifest -->
     <link rel="manifest" href="/site.webmanifest" />
 
+    <!-- Meta Dasar -->
     <meta name="description" content={description} />
     <meta name="author" content={SEO.author} />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href={`${Astro.site}${Astro.url.pathname}`}>
+
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
@@ -70,23 +79,56 @@ const twitterimage = `${siteUrl}${ogimage.url}`;
 
     <!-- Sitemap -->
     <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ihsanomia",
+        "url": "{siteUrl}",
+        "sameAs": [
+          "https://github.com/ihsanomia",
+          "https://linkedin.com/in/ihsan-muhammad-1b0800363"
+        ],
+        "jobTitle": "Web Developer",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "ID"
+        }
+      }
+    </script>
+
+    <!-- Geo Tagging untuk Indonesia -->
+    <meta name="geo.position" content="-6.175392;106.827153" />
+    <meta name="geo.placename" content={SEO.geo.city} />
+    <meta name="geo.region" content={SEO.geo.region} />
+    <meta name="ICBM" content="-6.175392, 106.827153" />
     
   </head>
   <body class="overflow-x-hidden">
     <SpeedInsights/>
+
+    <!-- BG element -->
     <div class="blur-circle"></div>
     <div
       style="  background:linear-gradient(45deg, rgba(96, 250, 155, 0) 10.79%, rgba(96, 250, 170, 0.03) 40.92%, rgba(96, 250, 155, 0) 90.35%)"
       class="fixed top-0 left-0 w-full h-full pointer-events-none -z-1"
     >
     </div>
+
+    <!-- Header -->
     <Header />
 
+    <!-- Konten Utama -->
     <div class="min-h-[85vh] ">
       <slot />
     </div>
 
+    <!-- Footer -->
     <Footer />
+
+    <!-- Script -->
     <script>
       import "../scripts/menu.js";
     </script>
