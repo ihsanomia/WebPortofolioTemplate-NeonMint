@@ -1,4 +1,5 @@
 ---
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import Layout from "../layouts/Layout.astro";
 import Experience from "../components/portfolio/Experience.astro";
 import HeroIndex from "../components/portfolio/HeroIndex.astro";
@@ -13,6 +14,10 @@ const ogimage = {
 };
 import Heading from "../components/ui/Heading.astro";
 ---
+
+<!-- ads -->
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5074740685909596"
+     crossorigin="anonymous"></script>
 
 <Layout pageTitle={pageTitle} description={description} ogimage={ogimage}>
   <HeroIndex />
@@ -61,7 +66,6 @@ import Heading from "../components/ui/Heading.astro";
       </ListProjects>
     </div>
   </section>
-
 
   <Contact />
 </Layout>
