@@ -2,8 +2,8 @@
   "name": "ihsanomia",
   "type": "module",
   "version": "0.0.1",
-  "description": "Ihsanomia - A personal blog and portfolio site.",
-  "author": "Ihsan",
+  "description": "developer",
+  "author": "ihsan",
   "license": "MIT",
   "scripts": {
     "dev": "astro dev",

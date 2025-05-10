@@ -22,9 +22,14 @@ const youtube = "https://www.youtube.com/@ihsanomia";
     <div
       class="relative h-6 cursor-pointer before:absolute before:left-1/2 before:top-1/2 before:h-full before:w-[40%] before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-[#50fd8f25] before:blur-3xl before:opacity-80 before:-z-1 hover:text-mint-500 transition-all [text-shadow:_0_1px_2px_#000]"
     >
-      <a href="/" aria-label="Return to homepage">
-        <!-- This icon represents the logo -->
-        <Icon name="logo" aria-hidden="true" />
+      <a
+        href="/"
+        aria-label="Go to home"
+        class="text-2xl font-bold tracking-tight bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent dark:from-mint-300 dark:to-blue-400 transition-all hover:scale-105"
+      >
+        <span class="hidden md:inline">ihsanomia</span>
+        <span class="md:hidden">ihsanomia</span>
+        {/* Versi singkat untuk mobile */}
       </a>
     </div>
     <div class="text-center">
@@ -32,15 +37,41 @@ const youtube = "https://www.youtube.com/@ihsanomia";
         href="https://github.com/ihsanomia"
         class="flex items-center justify-center gap-3 text-base font-normal italic max-sm:text-sm"
         aria-label="About the website development"
-        ><Icon name="code" aria-hidden="true" /> Developed by <strong>EFEELE</strong>, with Astro | ihsanomiacanworks</a
+        ><Icon name="code" aria-hidden="true" /> Developed by <strong
+          >EFEELE with Astro  </strong
+        >|ihsanomiacanworks</a
       >
     </div>
-    <div class="flex items-center justify-center gap-5" role="list" aria-label="Social media links">
-      <Social link={email} iconName="envelope" label={`Send email to ${email}`} />
-      <Social link={instagram} iconName="instagram" label={`Visit ${name} on Instagram`} />
-      <Social link={youtube} iconName="youtube" label={`Visit ${name} on YouTube`} />
-      <Social link={github} iconName="github" label={`Visit ${name} on GitHub`} />
-      <Social link={linkedin} iconName="linkedin" label={`Visit ${name} on LinkedIn`} />
+    <div
+      class="flex items-center justify-center gap-5"
+      role="list"
+      aria-label="Social media links"
+    >
+      <Social
+        link={email}
+        iconName="envelope"
+        label={`Send email to ${email}`}
+      />
+      <Social
+        link={instagram}
+        iconName="instagram"
+        label={`Visit ${name} on Instagram`}
+      />
+      <Social
+        link={youtube}
+        iconName="youtube"
+        label={`Visit ${name} on YouTube`}
+      />
+      <Social
+        link={github}
+        iconName="github"
+        label={`Visit ${name} on GitHub`}
+      />
+      <Social
+        link={linkedin}
+        iconName="linkedin"
+        label={`Visit ${name} on LinkedIn`}
+      />
     </div>
   </nav>
 </footer>

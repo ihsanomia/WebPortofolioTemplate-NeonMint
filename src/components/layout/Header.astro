@@ -26,13 +26,14 @@ const navItems = isActiveRoute
   <div
     class="relative mx-auto flex max-w-7xl flex-row items-center justify-between max-xl:px-6"
   >
-    <a href="/" aria-label="Go to home">
-      <Icon
-        name="logo"
-        class="h-6 cursor-pointer transition-all hover:text-mint-300"
-        aria-hidden="true"
-      />
-    </a>
+    <a 
+  href="/" 
+  aria-label="Go to home"
+  class="text-2xl font-bold tracking-tight bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent dark:from-mint-300 dark:to-blue-400 transition-all hover:scale-105"
+>
+  <span class="hidden md:inline">ihsanomia</span>
+  <span class="md:hidden">ihsanomia</span> {/* Versi singkat untuk mobile */}
+</a>
 
     <Navigation items={navItems} />
 
