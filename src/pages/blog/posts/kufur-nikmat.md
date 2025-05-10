@@ -84,4 +84,4 @@ Mereka menyebutku kufur nikmat.
 Tapi aku tahu, aku justru sedang sangat menghargai hidup:  
 dengan cara yang paling jujur — yaitu tetap hidup.
 
-— Muhammad Faiq Hudzaifah
+— ihsanomia / shine shine mode
