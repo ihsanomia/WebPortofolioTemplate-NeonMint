@@ -8,7 +8,7 @@ image:
   alt: "Ilustrasi siluet seseorang menatap cahaya di ujung lorong gelap, simbol perlawanan terhadap penilaian dunia"
 pubDate: 2025-05-10
 tags: ["Renungan", "Eksistensialisme", "Syukur", "Hidup", "Filsafat"]
-languages: [""]
+languages: ["markdown"]
 ---
 
 > *"Aku memilih untuk tetap hidup — bukan karena semuanya baik-baik saja, tapi karena aku tidak ingin mati sia-sia."*
