@@ -9,7 +9,7 @@ image:
 ---
 > *"Di dunia yang tak berarti, kita menciptakan makna melalui sistem yang kita bangun."*
 
-**Mahasiswa Teknik Informatika** yang melihat pengembangan sistem sebagai bentuk pemberontakan kontemporer terhadap kekacauan. Tertarik pada celah-celah dimana logika bertemu dengan absurditas.
+Sebagai **Mahasiswa Teknik Informatika** yang melihat pengembangan sistem sebagai bentuk pemberontakan kontemporer terhadap kekacauan. Tertarik pada celah-celah dimana logika bertemu dengan absurditas.
 
 ## 🔮 Bidang Minat
 - **Analisis Sistem** sebagai seni dekonstruksi realitas terstruktur
