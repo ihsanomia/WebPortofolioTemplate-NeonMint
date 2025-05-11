@@ -5,18 +5,20 @@ import preact from "@astrojs/preact";
 import sitemap from "@astrojs/sitemap"
 import icon from "astro-icon";
 
-// https://astro.build/config
 export default defineConfig({
   site: "https://ihsanomia.my.id",
   integrations: [
     preact(),
-    icon({
-      // local: 'src/icons', // ini bagian penting untuk ikon lokal
-    }),
+    icon(),
     sitemap({
-      filter: (page) =>
-        !page.includes("/blog/tags") &&
-        !page.includes("/blog/techs"),
+      entryLimit: 50000, // Tingkatkan limit jika banyak halaman
+      customPages: ['https://ihsanomia.my.id/'], // Pastikan home page termasuk
+      filter: (page) => {
+        // Filter yang lebih longgar
+        return !page.includes('admin') && 
+               !page.includes('private') &&
+               !page.endsWith('.json');
+      }
     }),
   ],
 
