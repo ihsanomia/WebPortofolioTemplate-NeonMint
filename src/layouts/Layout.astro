@@ -4,10 +4,10 @@ import Header from "../components/layout/Header.astro";
 import Footer from "../components/layout/Footer.astro";
 import  SpeedInsights  from "@vercel/speed-insights/astro"
 const {
-  pageTitle = "Ihsanomia",
-  description = "website portfolio pribadi Ihsanomia. Spesialis pembuatan website profesional dan aplikasi web berbasis di Indonesia. Menyediakan layanan pengembangan web berkualitas tinggi untuk bisnis dan individu.",
+  pageTitle = "ihsanomia | Developer - System Analyst - Indonesia",
+  description = "Spesialis pembuatan website profesional dan aplikasi web berbasis di Indonesia. Menyediakan layanan pengembangan web berkualitas tinggi untuk bisnis dan individu.",
   ogimage = {
-    url: "/images/imagedefault.webp",
+    url: "/images/anjay.webp",
     alt: "Portofolio Ihsanomia - Website Pribadi",
   },
 } = Astro.props;
@@ -37,6 +37,8 @@ const twitterimage = `${siteUrl}${ogimage.url}`;
   class="dark:bg-[#0E0E11] bg-mint-50/5 font-montserrat scroll-smooth"
 >
   <head>
+    <meta property="og:image" content={`${siteUrl}${ogimage.url}`} />
+
     <!-- Favicon Standar -->
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -54,6 +56,7 @@ const twitterimage = `${siteUrl}${ogimage.url}`;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{pageTitle}</title>
+
     <!-- Favicon for different platforms -->
     <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" href="/favicon-16x16.png" sizes="16x16" />
